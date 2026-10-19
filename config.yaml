@@ -1,0 +1,30 @@
+# The only implemented mode is paper. "live" is rejected on startup.
+mode: paper
+symbol: BTCUSDT
+interval: 1m
+windows: [5, 15, 60]
+default_signal: rsi_mr_30_70
+aroon:
+  period: 14
+  threshold: 25
+risk:
+  starting_bankroll: 1000.0
+  daily_loss_limit: 100.0
+  max_open_positions: 3
+  max_drawdown_pct: 0.15
+sizing:
+  fraction: 0.02
+  max_stake: 50.0
+execution:
+  # Flat entry used by the exchange-outcome study. Not a live quote.
+  entry_price: 0.50
+  fee_per_share: 0.01
+polymarket:
+  # Public fee schedule used in the study: fee = rate * p * (1 - p).
+  taker_fee_rate: 0.07
+  read_only: true
+maker:
+  shade: 0.02
+  anchor: open_print
+  # Rebate is not assumed. Leave at 0 unless you are sensitivity-testing a number you supply.
+  rebate_per_share: 0.0

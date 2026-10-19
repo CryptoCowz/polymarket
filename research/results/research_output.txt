@@ -1,0 +1,33 @@
+variants evaluated on validation: 81 Bonferroni one-sided z for p=0.05: 3.23
+selected: {5: 'rsi_mr_30_70', 15: 'rsi_mr_30_70', 60: 'rsi_mr_30_70'}
+      H        signal          split  trades     hit  z_vs_50  pnl_sh_1c  z_vs_breakeven_1c  pnl_sh_3c
+54    5  rsi_mr_30_70  TEST_selected    7906  0.5401   7.1304     0.0301             5.3520     0.0101
+136  15  rsi_mr_30_70  TEST_selected    2415  0.5573   5.6367     0.0473             4.6538     0.0273
+218  60  rsi_mr_30_70  TEST_selected     512  0.5293   1.3258     0.0193             0.8733    -0.0007
+      H                signal split  trades     hit  z_vs_50  pnl_sh_1c  z_vs_breakeven_1c  pnl_sh_3c
+103  15          rsi_mr_30_70   val    3230  0.5755   8.5865     0.0655             7.4499     0.0455
+21    5          rsi_mr_30_70   val    9868  0.5534  10.6103     0.0434             8.6235     0.0234
+185  60          rsi_mr_30_70   val     742  0.5526   2.8635     0.0426             2.3187     0.0226
+133  15  ensemble_logit_m0.05   val   12171  0.5488  10.7775     0.0388             8.5711     0.0188
+105  15             bb_mr_2sd   val    2662  0.5485   5.0005     0.0385             3.9686     0.0185
+187  60             bb_mr_2sd   val     627  0.5470   2.3562     0.0370             1.8554     0.0170
+51    5  ensemble_logit_m0.05   val   14047  0.5454  10.7577     0.0354             8.3873     0.0154
+23    5             bb_mr_2sd   val    9823  0.5438   8.6872     0.0338             6.7050     0.0138
+215  60  ensemble_logit_m0.05   val    3877  0.5409   5.0911     0.0309             3.8458     0.0109
+191  60   reversal_15m_lowvol   val    4069  0.5338   4.3111     0.0238             3.0353     0.0038
+131  15  ensemble_logit_m0.02   val   24896  0.5328  10.3432     0.0228             7.1875     0.0028
+213  60  ensemble_logit_m0.02   val    6668  0.5298   4.8740     0.0198             3.2408    -0.0002
+211  60  ensemble_logit_m0.01   val    7661  0.5293   5.1298     0.0193             3.3793    -0.0007
+129  15  ensemble_logit_m0.01   val   29887  0.5288   9.9434     0.0188             6.4858    -0.0012
+167  60     aroon_reversal_25   val    7831  0.5278   4.9156     0.0178             3.1458    -0.0022
+      H                signal         split  trades     hit  z_vs_50  pnl_sh_1c  z_vs_breakeven_1c  pnl_sh_3c
+147  15          rsi_mr_30_70  test_posthoc    2415  0.5573   5.6367     0.0473             4.6538     0.0273
+80    5  ensemble_logit_m0.05  test_posthoc   10849  0.5451   9.3991     0.0351             7.3160     0.0151
+162  15  ensemble_logit_m0.05  test_posthoc    9349  0.5408   7.8912     0.0308             5.9574     0.0108
+65    5          rsi_mr_30_70  test_posthoc    7906  0.5401   7.1304     0.0301             5.3520     0.0101
+66    5             bb_mr_2sd  test_posthoc    8268  0.5358   6.5106     0.0258             4.6920     0.0058
+244  60  ensemble_logit_m0.05  test_posthoc    3000  0.5333   3.6515     0.0233             2.5560     0.0033
+148  15             bb_mr_2sd  test_posthoc    2158  0.5310   2.8846     0.0210             1.9555     0.0010
+161  15  ensemble_logit_m0.02  test_posthoc   19658  0.5305   8.5445     0.0205             5.7404     0.0005
+229  60          rsi_mr_30_70  test_posthoc     512  0.5293   1.3258     0.0193             0.8733    -0.0007
+243  60  ensemble_logit_m0.02  test_posthoc    5222  0.5289   4.1792     0.0189             2.7339    -0.0011

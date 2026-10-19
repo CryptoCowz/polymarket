@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BTC Up/Down Lab — paper only</title>
+  <link rel="icon" href="/favicon.svg" />
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="banner" role="status">
+    PAPER / SIMULATION ONLY — no orders are sent, no wallets are created, no private keys are used.
+    Every figure is computed.
+  </div>
+  <header>
+    <div class="brand">
+      <p class="eyebrow">Polymarket BTC research</p>
+      <h1>Up / Down Lab</h1>
+      <p class="lede">Short-horizon Bitcoin markets, tested out of sample, then priced against the real book. Paper tape and maker quotes stay on this machine.</p>
+    </div>
+    <nav id="nav" aria-label="Sections">
+      <button type="button" data-view="overview">Overview</button>
+      <button type="button" data-view="backtest">Backtest</button>
+      <button type="button" data-view="leaderboard">Leaderboard</button>
+      <button type="button" data-view="prices">Polymarket prices</button>
+      <button type="button" data-view="paper">Paper tape</button>
+      <button type="button" data-view="maker">Maker test</button>
+    </nav>
+  </header>
+  <main id="view" aria-live="polite">
+    <p class="note">Loading study artifacts…</p>
+  </main>
+  <footer>
+    Public Binance klines and public Polymarket reads. Caches stay in <code>data/</code>. Live trading is not implemented.
+  </footer>
+  <script src="/static/app.js"></script>
+</body>
+</html>
