@@ -79,6 +79,20 @@ python scripts/research.py                   # re-run only after build_data.py
 
 The web backtest is capped at 120 days so a mis-click cannot download the full history. The CLI is not capped. First use downloads Binance Vision monthly or daily zips into `data/cache/` and uses the public REST API only for the forming day.
 
+## Screenshots
+
+These are the local UI after `python -m aroonbot`, using the committed study and a short public-data run. The 55.7% figure is the untouched Binance test. The −0.91¢ figure is the 2026 Polymarket price check on a different sample (2,409 fired 15-minute markets, settlement hit 54.3%). A fresh backtest over a few recent days will not match either number.
+
+![Overview: paper banner, 55.7% 15-minute test hit, and negative Polymarket PnL](docs/screenshots/overview.png)
+
+![Leaderboard: 5- and 15-minute Bonferroni pass, 60-minute does not](docs/screenshots/leaderboard.png)
+
+![Backtest: recent 15-minute run beside the published Polymarket check](docs/screenshots/backtest.png)
+
+![Paper tape: current public BTC signal, simulated skip, no order](docs/screenshots/paper_tape.png)
+
+![Maker paper test: shaded limit replay with computed fills](docs/screenshots/maker.png)
+
 ## UI
 
 - **Overview.** Headline and per-horizon numbers computed from the committed CSVs.

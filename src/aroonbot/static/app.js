@@ -157,8 +157,7 @@ function backtestBody(result) {
         </tr>`).join("")}</tbody>
       </table></div>
       <ul class="clean">${result.assumptions.map((line) => `<li>${esc(line)}</li>`).join("")}</ul>
-    </section>
-    <p class="note" id="status"></p>`;
+    </section>`;
 }
 
 async function renderBacktest() {
@@ -514,7 +513,7 @@ async function renderMaker() {
         <div><label for="manchor">Anchor</label><select id="manchor"><option value="open_print">Last print minus shade</option><option value="half">$0.50 minus shade</option></select></div>
       </div>
       <div class="row" style="margin-top:10px">
-        <div><label for="mn">Completed windows</label><input id="mn" type="number" min="4" max="48" value="16" /></div>
+        <div><label for="mn">Completed windows</label><input id="mn" type="number" min="4" max="48" value="48" /></div>
         <div><label for="mcap">Max markets to fetch</label><input id="mcap" type="number" min="1" max="24" value="12" /></div>
         <div><label for="mrebate">Rebate / share (default 0)</label><input id="mrebate" type="number" min="0" max="0.05" step="0.001" value="0" /></div>
         <div class="actions"><button class="primary" id="mrun" type="button">Run maker replay</button></div>
